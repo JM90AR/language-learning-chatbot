@@ -33,7 +33,8 @@ A multilingual chatbot built with **Python**, **Flask**, **Twilio API**, and **D
 **Bot:** `✅ English mode activated. Send me a phrase and I'll translate it!`
 
 **User:** `¿Cómo estás?`  
-**Bot:**  🔍 Translations:
+**Bot:**  
+🔍 Translations:
 Español: ¿Cómo estás?
 English: How are you?
 German: Wie geht es dir?
