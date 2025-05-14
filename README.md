@@ -59,5 +59,5 @@ python chatbot.py
 Make sure you configure Twilio to point to your /whatsapp route.
 
 📫 Contact
-Created by Jose Miguel Alba – LinkedIn
+Created by Miguel Alba
 Feel free to connect or reach out!
