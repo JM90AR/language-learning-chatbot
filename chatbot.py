@@ -25,17 +25,17 @@ def translate_deepl(text, target_lang):
     return response.json()["translations"][0]["text"]
 
 
-# Elige qué función usar (comenta la otra)
+# Función DeepL
 def translate(text, target_lang):
-    return translate_deepl(text, target_lang)  # Usando DeepL
-    # return translate_libre(text, target_lang)  # Usando LibreTranslate
+    return translate_deepl(text, target_lang) 
+
 
 @app.route('/whatsapp', methods=['POST'])
 def whatsapp_bot():
     user_msg = request.values.get('Body', '').strip().lower()
     resp = MessagingResponse()
     
-    # --- Mensaje de bienvenida personalizado ---
+    # --- Mensaje de bienvenida ---
     if user_msg == 'hola' or user_msg == 'hi' or user_msg == 'start':
         welcome_msg = """
         ¡Hola! 👋 Soy *La IA de Miguel*, tu tutor de idiomas. 🌍
